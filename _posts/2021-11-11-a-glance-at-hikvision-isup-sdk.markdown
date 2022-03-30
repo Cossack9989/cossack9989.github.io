@@ -5,7 +5,7 @@ date:   2021-11-11 12:00:00 +0800
 categories: vuln
 ---
 
-![](/_images/Hikvision-Logo-scaled.jpeg)
+![](https://raw.githubusercontent.com/Cossack9989/cossack9989.github.io/main/_images/Hikvision-Logo-scaled.jpeg)
 
 好久不更新博客，恰好最近拿到一批编号`CNNVD-202111-636/637/638/639`，`CVE-2021-42260`，寻思着不如来分享一下这次审计2b sdk的经历
 
@@ -57,7 +57,7 @@ ISUP SDK对各位来说可能比较陌生，这是一款海康威视发布的to 
 - libHCISUPStream.so 没看
 
 发现报文类似SOAP，是类HTTP+XML，例子如下
-![](/_images/hikvision-isup-sdk-structure.png)
+![](https://raw.githubusercontent.com/Cossack9989/cossack9989.github.io/main/_images/hikvision-isup-sdk-structure.png)
 根据上述信息，可以确定多个漏洞挖掘方向：
 
 - SDK的报文解析
@@ -88,13 +88,13 @@ ISUP SDK对各位来说可能比较陌生，这是一款海康威视发布的to 
 
 => `CAlarmListenTCP::PushHTTPAlarmDataToCache`
 
-![](/_images/ealarm1.png)
+![](https://raw.githubusercontent.com/Cossack9989/cossack9989.github.io/main/_images/ealarm1.png)
 
 => `CAlarmListenTCP::ProcessHttpHeadData`
 
-![](/_images/ealarm2.png)
+![](https://raw.githubusercontent.com/Cossack9989/cossack9989.github.io/main/_images/ealarm2.png)
 
-![](/_images/ealarm3.png)
+![](https://raw.githubusercontent.com/Cossack9989/cossack9989.github.io/main/_images/ealarm3.png)
 
 通过定位`Content-Length:`与`\r\n`前后缀，取出`Content-Length`字段并填入栈上大小为0x20的缓冲区中，极易造成栈上数据污染导致的crash；该缓冲区距离返回地址仅0x40，精心构造的`Content-Length`字段可覆盖返回地址从而进行ROP来RCE
 
@@ -116,13 +116,13 @@ ISUP SDK对各位来说可能比较陌生，这是一款海康威视发布的to 
 
 => `CHTTPProxyMgr::FindHTTPTotalLen`
 
-![](/_images/ecms1.png)
+![](https://raw.githubusercontent.com/Cossack9989/cossack9989.github.io/main/_images/ecms1.png)
 
 => `CHTTPProxyMgr::GetHeaderValueInt`
 
-![](/_images/ecms2.png)
+![](https://raw.githubusercontent.com/Cossack9989/cossack9989.github.io/main/_images/ecms2.png)
 
-![](/_images/ecms3.png)
+![](https://raw.githubusercontent.com/Cossack9989/cossack9989.github.io/main/_images/ecms3.png)
 
 通过定位`Content-Length:`与`\r\n`前后缀，取出`Content-Length`字段并填入栈上大小为0x48的缓冲区中，极易造成栈上数据污染导致的crash；该缓冲区距离返回地址仅0x60，精心构造的`Content-Length`字段可覆盖返回地址从而进行ROP来RCE
 
@@ -142,13 +142,13 @@ ISUP SDK对各位来说可能比较陌生，这是一款海康威视发布的to 
 
 => `Utils_ParseHCEHomeHead`
 
-![](/_images/ecms4.png)
+![](https://raw.githubusercontent.com/Cossack9989/cossack9989.github.io/main/_images/ecms4.png)
 
 => `ConvertStringToVersion`
 
-![](/_images/ecms4.png)
+![](https://raw.githubusercontent.com/Cossack9989/cossack9989.github.io/main/_images/ecms4.png)
 
-![](/_images/ecms6.png)
+![](https://raw.githubusercontent.com/Cossack9989/cossack9989.github.io/main/_images/ecms6.png)
 
 通过定位`<Version>`与`</Version>`前后缀，取出`Version`字段并填入栈上大小为0x20的缓冲区中，极易造成栈上数据污染导致的crash；该缓冲区距离返回地址仅0x60，精心构造的`Version`字段可覆盖返回地址从而进行ROP来RCE
 
@@ -162,15 +162,15 @@ ISUP SDK对各位来说可能比较陌生，这是一款海康威视发布的to 
 
 => `CProtocolProcVRB::Proc`
 
-![](/_images/ess1.png)
+![](https://raw.githubusercontent.com/Cossack9989/cossack9989.github.io/main/_images/ess1.png)
 
-![](/_images/ess2.png)
+![](https://raw.githubusercontent.com/Cossack9989/cossack9989.github.io/main/_images/ess2.png)
 
 => `CBusinessProc::SaveFile`
 
-![](/_images/ess3.png)
+![](https://raw.githubusercontent.com/Cossack9989/cossack9989.github.io/main/_images/ess3.png)
 
-![](/_images/ess4.png)
+![](https://raw.githubusercontent.com/Cossack9989/cossack9989.github.io/main/_images/ess4.png)
 
 将长度上限为0x1ff的`filename`拷贝入长度0x100的栈上缓冲区，将会导致一系列对象与成员指针被覆盖，从而诱发非法地址访问。该漏洞并不排除构造恶意对象导致RCE的情况。
 
@@ -222,7 +222,7 @@ int main(int argc, char*argv[]){
 
 afl-fuzz, run!
 
-![](/_images/tinyxml_loop.png)
+![](https://raw.githubusercontent.com/Cossack9989/cossack9989.github.io/main/_images/tinyxml_loop.png)
 
 然后就跑项目主页报漏洞了 https://sourceforge.net/p/tinyxml/bugs/141/
 
