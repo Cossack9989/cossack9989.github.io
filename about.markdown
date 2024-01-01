@@ -26,7 +26,7 @@ Also a baby bug hunter~
 - Topics
 
   - DefCon Group 860571 议题 [Auto Binary Analysis for IoT devices](https://mp.weixin.qq.com/s/7xms6EYzs2CJpP2Bm7D2Eg)
-  - 字节跳动安全中心 公众号推送 [图神经网络和代码大模型加持 | 提升二进制比对分享](https://mp.weixin.qq.com/s/LHegfuU-zSPNBarLCNV0PQ)
+  - 字节跳动安全中心 公众号推送 [图神经网络和代码大模型加持——提升二进制比对分享](https://mp.weixin.qq.com/s/LHegfuU-zSPNBarLCNV0PQ)
 
 - Vulns
 
