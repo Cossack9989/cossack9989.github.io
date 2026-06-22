@@ -26,9 +26,6 @@ Also a bug bounty hunter.
 - 第十二届全国大学生信息安全竞赛创新实践能力赛全国总决赛一等奖
 - 看雪安全挑战赛 KCTF 2019 Q2 亚军、Q3 冠军
 - 第三届"红帽杯"网络安全攻防大赛亚军
-- 2019 XCTF 联赛分站赛 SCTF 亚军
-- 2020 西湖论剑网络安全技能大赛 IoT 闯关赛三等奖
-- 2021 Datacon 软件安全赛道前十强
 - 2022 CNNVD 二级贡献奖
 
 ## CVEs & Acknowledgments
@@ -47,4 +44,3 @@ Also a bug bounty hunter.
 - **FreeSWITCH**: CVE-2022-31001, CVE-2022-31002, CVE-2022-31003
 - **TinyXML**: CVE-2021-42260
 - **Deepin/UOS**: CNNVD-202109-233
-- **WPS**: CVE-2020-21539
