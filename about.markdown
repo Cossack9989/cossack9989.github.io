@@ -4,55 +4,47 @@ title: About
 permalink: /about/
 ---
 
-Security Research Engineer at Bytedance Wuheng Lab, focus on IoT/Protocol/Fuzz/BinarySCA. New to GNN, LLM and MLops.
+Security Research Engineer at VolcEngine Cloud Security Team, used to focus on IoT/Protocol/Fuzz/BinarySCA, now more on AI4Security.
 
+Also a bug bounty hunter.
 
-Also a baby bug hunter~
+## Talks
 
-- Awards (sort by time)
+- [Blackhat Asia 2026 Arsenal, BoardSentinel: An Automated Static Analysis Framework for BMC Firmware Vulnerability Detection](https://blackhat.com/asia-26/arsenal/schedule/?#boardsentinel-an-automated-static-analysis-framework-for-bmc-firmware-vulnerability-detection-50129)
+- [2024 长沙网信办信息物理系统安全技术沙龙, Draytek Vigor 2960 Memoirs](https://bestwing.me/Vigor2960-Memoirs-Pursuit-of-the-Elusive.html)
+- [DefCon Group 860571 议题, Auto Binary Analysis for IoT devices](https://mp.weixin.qq.com/s/7xms6EYzs2CJpP2Bm7D2Eg)
+- [字节跳动安全中心公众号推送, 图神经网络和代码大模型加持——提升二进制比对分享](https://mp.weixin.qq.com/s/LHegfuU-zSPNBarLCNV0PQ)
 
-  - 2019 看雪安全挑战赛 KCTF 第2轮晋级赛亚军、第3轮晋级赛冠军
-  - 2019 XCTF 联赛分站赛 SCTF 亚军
-  - 第十二届全国大学生信息安全竞赛创新实践能力赛华东北赛区决赛特等奖
-  - 第十二届全国大学生信息安全竞赛创新实践能力赛全国总决赛一等奖
-  - 第三届“红帽杯”网络安全攻防大赛总榜亚军，兼社会网安人才组亚军
-  - 2020 西湖论剑网络安全技能大赛 IoT 闯关赛三等奖
-  - 2020 补天杯软件破解大赛最佳优胜奖
-  - 2021 Datacon 软件安全赛道前十强
-  - 2021 西湖论剑网络安全技能大赛网络安全综合技能赛亚军
-  - 2022 CNNVD 二级贡献奖
-  - 2023 Datacon 漏洞分析赛道冠军
+## Awards
 
-- Topics
+- 全国技术能手、江苏省技术能手、江苏省青年岗位能手、江苏省五一创新能手
+- Datacon 2023 大数据安全分析竞赛, 漏洞分析赛道冠军
+- 第47届世界技能大赛兼第二届全国技能大赛, 网络安全赛道铜牌
+- 西湖论剑·2021 中国杭州网络安全技能大赛, 网络安全综合技能赛亚军
+- 2020 "补天杯"软件破解大赛, 最佳优胜奖
+- 第十二届全国大学生信息安全竞赛创新实践能力赛华东北赛区决赛特等奖
+- 第十二届全国大学生信息安全竞赛创新实践能力赛全国总决赛一等奖
+- 看雪安全挑战赛 KCTF 2019 Q2 亚军、Q3 冠军
+- 第三届"红帽杯"网络安全攻防大赛亚军
+- 2019 XCTF 联赛分站赛 SCTF 亚军
+- 2020 西湖论剑网络安全技能大赛 IoT 闯关赛三等奖
+- 2021 Datacon 软件安全赛道前十强
+- 2022 CNNVD 二级贡献奖
 
-  - DefCon Group 860571议题 [Auto Binary Analysis for IoT devices](https://mp.weixin.qq.com/s/7xms6EYzs2CJpP2Bm7D2Eg)
-  - 字节跳动安全中心公众号推送 [图神经网络和代码大模型加持 提升二进制比对分享](https://mp.weixin.qq.com/s/LHegfuU-zSPNBarLCNV0PQ)
+## CVEs & Acknowledgments
 
-- Vulns
-
-  - CVE-2020-14472: DrayTek Vigor RCE
-  - CVE-2020-14473: DrayTek Vigor RCE
-  - CVE-2020-21539: WPS Install LPE
-  - CVE-2021-42259: H3C VPN Router RCE
-  - CVE-2021-42260: TinyXML DoS
-  - CVE-2021-42911: DrayTek Vigor RCE
-  - CVE-2021-43118: DrayTek Vigor RCE
-  - CVE-2022-24754: PJSIP API RCE
-  - CVE-2022-24763: PJSIP XML DoS
-  - CVE-2022-24786: PJSIP RTCP RCE
-  - CVE-2022-24793: PJSIP DNS RCE
-  - CVE-2022-31001: FreeSWITCH Sofia-SIP DoS
-  - CVE-2022-31002: FreeSWITCH Sofia-SIP DoS
-  - CVE-2022-31003: FreeSWITCH Sofia-SIP RCE
-  - CVE-2022-31031: PJSIP STUN RCE
-  - CVE-2023-28099: OpenSIPS dispatcher invalid log
-  - CVE-2023-35086: ASUS RT-AX56U V2 & RT-AC86U FSB
-  - CVE-2023-35087: ASUS RT-AX56U V2 & RT-AC86U FSB
-  - CNNVD-202109-233: Deepin LPE
-  - CNNVD-202111-636: Hikvision ISUP ESS RCE
-  - CNNVD-202111-637: Hikvision ISUP ECMS RCE
-  - CNNVD-202111-638: Hikvision ISUP ECMS RCE
-  - CNNVD-202111-639: Hikvision ISUP EAlarm RCE
-  - CNNVD-202202-1015: LeboCast Lelink InfoLeak
-  - CNNVD-202202-1016: LeboCast TeleControl TakeOver
-  - CNNVD-202207-2735: H3C ER Router 认证绕过（2022年度CNNVD“二级贡献”奖）
+- **NVIDIA**: CVE-2025-23257
+- **AWS**: [Neuron Driver 2.20 fixpack1 (2.20.1) 安全更新致谢](https://github.com/aws-neuron/aws-neuron-sdk/blob/c8817eef45c83c586ff07dbaf68605b812391eea/_backup-rn/runtime/aws-neuronx-dkms/index.rst#neuron-driver-release-218200)
+- **ASUS**: CVE-2023-35086, CVE-2023-35087
+- **DrayTek**: CVE-2020-14472, CVE-2020-14473, CVE-2021-42911, CVE-2021-43118
+- **D-Link**: CVE-2020-18568
+- **新华三 (H3C)**: CVE-2021-42259, CNNVD-202207-2735 (2022年 CNNVD 二级贡献奖)
+- **乐播投屏**: CNNVD-202202-1015, CNNVD-202202-1016
+- **海康威视**: CNNVD-202111-636, CNNVD-202111-637, CNNVD-202111-638, CNNVD-202111-639
+- **锐捷**: [RAP 部分型号命令执行漏洞通告](https://www.ruijie.com.cn/gy/xw-aqtg-zw/87114/)
+- **OpenSIPS**: CVE-2023-28099
+- **PJSIP**: CVE-2022-24754, CVE-2022-24763, CVE-2022-24786, CVE-2022-24793, CVE-2022-31031
+- **FreeSWITCH**: CVE-2022-31001, CVE-2022-31002, CVE-2022-31003
+- **TinyXML**: CVE-2021-42260
+- **Deepin/UOS**: CNNVD-202109-233
+- **WPS**: CVE-2020-21539
