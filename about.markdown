@@ -30,6 +30,8 @@ Also a bug bounty hunter.
 
 ## CVEs & Acknowledgments
 
+- **linux:kvm-x86**: [CVE-2026-74517](https://lists.openwall.net/linux-cve-announce/2026/08/15/779)
+- **linux:kvm-arm64**: [CVE-2026-64555](https://lists.openwall.net/linux-cve-announce/2026/07/27/16)
 - **NVIDIA**: CVE-2025-23257
 - **AWS**: [Neuron Driver 2.20 fixpack1 (2.20.1) 安全更新致谢](https://github.com/aws-neuron/aws-neuron-sdk/blob/c8817eef45c83c586ff07dbaf68605b812391eea/_backup-rn/runtime/aws-neuronx-dkms/index.rst#neuron-driver-release-218200)
 - **ASUS**: CVE-2023-35086, CVE-2023-35087
