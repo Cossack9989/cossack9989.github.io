@@ -10,8 +10,10 @@ Also a bug bounty hunter.
 
 ## Talks
 
+- [看雪SDC 2026, ZeroMDASH: 领域自适应的Agent-Native 通用漏洞挖掘工程](/slides/2026/10/23/zeromdash-agent-native-vulnerability-mining.html)
 - [Blackhat Asia 2026 Arsenal, BoardSentinel: An Automated Static Analysis Framework for BMC Firmware Vulnerability Detection](https://blackhat.com/asia-26/arsenal/schedule/?#boardsentinel-an-automated-static-analysis-framework-for-bmc-firmware-vulnerability-detection-50129)
-- [2024 长沙网信办信息物理系统安全技术沙龙, Draytek Vigor 2960 Memoirs](https://bestwing.me/Vigor2960-Memoirs-Pursuit-of-the-Elusive.html)
+- [补天城市沙龙, Who touched my Bare Metal](/slides/2025/05/31/who-touched-my-bare-metal.html)
+- [某市闭门沙龙, Draytek Vigor 2960 Memoirs](https://bestwing.me/Vigor2960-Memoirs-Pursuit-of-the-Elusive.html)
 - [DefCon Group 860571 议题, Auto Binary Analysis for IoT devices](https://mp.weixin.qq.com/s/7xms6EYzs2CJpP2Bm7D2Eg)
 - [字节跳动安全中心公众号推送, 图神经网络和代码大模型加持——提升二进制比对分享](https://mp.weixin.qq.com/s/LHegfuU-zSPNBarLCNV0PQ)
 
